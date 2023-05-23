@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+			
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut bibendum felis. Curabitur eget sollicitudin eros. Proin pulvinar nibh quis purus varius, ac tempus nulla gravida. Ut quis luctus turpis, porttitor rutrum purus. Sed tincidunt sodales augue, sed euismod sem efficitur id. Sed ut vehicula lectus, mollis bibendum nunc. Maecenas turpis neque, interdum a scelerisque quis, interdum non nisi.</p>
+
+				<p>Vivamus a felis quis mauris facilisis volutpat id eu massa. Donec placerat leo at nisl vulputate dignissim. Fusce fermentum faucibus venenatis. Ut dignissim tellus in lacinia aliquet. Nunc porta neque id nulla hendrerit condimentum. In fermentum urna eget risus sodales imperdiet. Duis ultrices facilisis neque ut posuere. Nam elementum pellentesque ipsum. Mauris nunc nisi, efficitur ut imperdiet nec, pulvinar sit amet turpis. Maecenas euismod neque et mattis pretium. Donec viverra mattis tortor, eu convallis massa tincidunt sit amet. Donec maximus lacinia nisi a egestas. Suspendisse et consequat purus.</p>
+
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Warlley</p>
+		</footer>
+
+	</body>
+</html>

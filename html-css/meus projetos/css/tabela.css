@@ -1,0 +1,55 @@
+header {
+	padding: 20px;
+	text-align: center;
+	font-family: Helvetica;
+}
+
+header p {
+	color: rgb(133, 133, 133);
+}
+
+.table-container {
+	padding: 2rem 1rem;
+	text-align: center;
+	font-family: Helvetica;
+}
+table tr td:first-child {
+	font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+	background-color: #C4C4C4;
+}
+
+table tbody tr:nth-child(odd) {
+	font-weight:bold;
+}
+
+table tbody tr:hover {
+	background-color: #EDEDED;
+}
+
+table {
+	border: 1px solid;
+	width: 100%;
+}
+
+th {
+	padding: 1rem;
+	background-color: #3282F6;
+	font-size: 1.2rem;
+	color: white;
+}
+
+table td {
+	padding: 1rem;
+	font-size: 1.2rem;
+	vertical-align: middle;
+}
+
+.table-container tfoot {
+	background: #3282F6;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
