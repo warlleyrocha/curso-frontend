@@ -19,6 +19,8 @@ Arquivo B | Versão 1 | Versão 2
 ## Commits 
 Informação de alteração 
 - após testado todo seu código 
+- git add *
+- git commit -m 'mensagem'
 
 ## Git Flow
 Fluxo do git
