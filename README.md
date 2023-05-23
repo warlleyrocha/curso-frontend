@@ -50,3 +50,8 @@ git merge main
 Mescla de branchs no repositório
 Permite code review
 O repositório resolve os conflitos automaticamente
+
+
+### Configua o GitFlow
+git flow init
+git flow feature start {nome-da-feature}
